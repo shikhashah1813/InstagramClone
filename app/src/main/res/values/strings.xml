@@ -10,7 +10,11 @@
     <string name="following">Following</string>
     <string name="_0">0</string>
     <string name="edit_profile">Edit Profile</string>
+    <string name="username">Username</string>
+    <string name="notifications">Notifications</string>
+    <string name="change_image">Change Image</string>
     <string name="full_name">Full Name</string>
     <string name="bio">Bio</string>
-    <string name="username">Username</string>
+    <string name="logout">LogOut</string>
+    <string name="delete_account">Delete Account</string>
 </resources>
