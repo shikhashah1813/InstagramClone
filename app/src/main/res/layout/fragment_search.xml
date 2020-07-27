@@ -38,9 +38,7 @@
                     android:layout_toStartOf="@id/search_icon"/>
 
             </RelativeLayout>
-
         </androidx.appcompat.widget.Toolbar>
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView

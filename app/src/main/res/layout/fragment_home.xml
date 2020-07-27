@@ -21,12 +21,14 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/instagram_logo"
                     android:layout_width="100dp"
                     android:layout_height="50dp"
                     android:src="@drawable/instagram_logo"
                     android:layout_alignParentStart="true" />
 
                 <ImageView
+                    android:id="@+id/dm_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/send"
