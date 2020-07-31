@@ -70,9 +70,9 @@ class SignUpActivity : AppCompatActivity() {
         val userRef = db.reference.child("User")
         val userMap = HashMap<String, Any>()
         userMap["uid"] = currentUserId
-        userMap["name"] = currentUserId
-        userMap["username"] = currentUserId
-        userMap["email"] = currentUserId
+        userMap["name"] = name
+        userMap["username"] = username
+        userMap["email"] = email
         userMap["bio"] = "Hey, I'm using Instagram Clone."
         userMap["image"] = "gs://instagramclone-5e708.appspot.com/Default Images/default_avatar.png"
 
@@ -80,7 +80,8 @@ class SignUpActivity : AppCompatActivity() {
             if (task.isSuccessful) {
                 progressDialog.dismiss()
                 Toast.makeText(this, "Account has been created", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, MainActivity::class.java)
+
+                val intent = Intent(this@SignUpActivity, MainActivity::class.java)
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(intent)
                 finish()
